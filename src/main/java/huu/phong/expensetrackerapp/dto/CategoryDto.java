@@ -1,4 +1,8 @@
 package huu.phong.expensetrackerapp.dto;
 
-public record CategoryDto(Long id, String name) {
+import io.swagger.v3.oas.annotations.media.Schema;
+
+@Schema(description = "Category")
+public record CategoryDto(Long id,
+                          @Schema(description = "Category name") String name) {
 }
